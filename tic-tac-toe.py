@@ -31,11 +31,11 @@ class ttt:
         scored = []
         for p in self.valid_positions:
                 if p in (0,2,6,8):
-                    scored.append((p,3))
+                    scored.append((p,2))
                 elif p in (1,3,5,7):
                     scored.append((p,1))
                 else:
-                    scored.append((p,2))
+                    scored.append((p,3))
         return scored
     
     def next_move(self,*moves):
